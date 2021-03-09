@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap7.1</title>
+</head>
+<body>
+<label for="toan">Toán</label>
+<input type="number" min="0" id="toan">
+<label for="ly">Lý</label>
+<input type="number"min="0"id="ly">
+<label for="hoa">Hóa</label>
+<input type="number"min="0" id="hoa">
+<button type="button" onclick="sum()">Tổng</button>
+<button type="button" onclick="avg()">Trung bình</button>
+<h4 id="result"></h4>
+<script type="text/javascript">
+    function sum() {
+        var a = parseFloat(document.getElementById('toan').value)
+        var b = parseFloat(document.getElementById('ly').value)
+        var c = parseFloat(document.getElementById('hoa').value)
+        var sum = a + b + c
+        document.getElementById("result").innerHTML = "tổng là: " + sum
+    }
+
+    function avg() {
+        var a = parseFloat(document.getElementById('toan').value)
+        var b = parseFloat(document.getElementById('ly').value)
+        var c = parseFloat(document.getElementById('hoa').value)
+        var avg = (a + b + c) / 3
+        document.getElementById("result").innerHTML = "trung bình là: " + avg
+    }
+</script>
+
+
+</body>
+</html>
