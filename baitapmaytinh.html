@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitapmaytinh</title>
+</head>
+<body>
+<h3>Canculator</h3>
+<input type="number" id="gt1">
+<input type="number" id="gt2"><br><br>
+<button type="button" onclick="tong()">Addition(+)</button>
+<button type="button" onclick="hieu()">Subtraction(-)</button>
+<button type="button" onclick="tich()">Multiplication(X)</button>
+<button type="button" onclick="thuong()">Division(/)</button>
+<p id="maytinh"></p>
+<script>
+    function tong(){
+        let a=parseFloat(document.getElementById("gt1").value)
+        let b=parseFloat(document.getElementById("gt2").value)
+        let result=a+b
+        document.getElementById("maytinh").innerHTML='Result Division: '+ result
+    }
+    function hieu(){
+        let a=parseFloat(document.getElementById("gt1").value)
+        let b=parseFloat(document.getElementById("gt2").value)
+        let result=a-b
+        document.getElementById("maytinh").innerHTML='Result Division: '+ result
+    }
+    function tich(){
+        let a=parseFloat(document.getElementById("gt1").value)
+        let b=parseFloat(document.getElementById("gt2").value)
+        let result=a*b
+        document.getElementById("maytinh").innerHTML='Result Division: '+ result
+    }
+    function thuong(){
+        let a=parseFloat(document.getElementById("gt1").value)
+        let b=parseFloat(document.getElementById("gt2").value)
+        let result=a/b
+        document.getElementById("maytinh").innerHTML='Result Division: '+ result
+    }
+
+</script>
+</body>
+</html>
